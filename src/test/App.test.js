@@ -23,12 +23,3 @@ describe('Connect-4 Player Specific Test Suite', () => {
         expect(wrapper.instance().whoIsNext(2)).toBe('Your turn red');
     });
 });
-describe('Connect-4 Game Board Specific Test Suite', () => {
-    it('should return draw when game board is full ', () => {
-        const wrapper = shallow(<App />);
-        //const cell = [1]; 
-        //const row = [0];
-        //const board =  [0, 1, 2, 3, 4, 5, 6][1];
-        expect(wrapper.instance().checkDraw([0][0])).toBe('draw');        
-      });
-});
